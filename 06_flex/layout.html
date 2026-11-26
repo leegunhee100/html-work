@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* 화면의 전체 높이 */
+            height: 100vh;
+        }
+        .header {
+            height: 80px;
+            background-color: steelblue;
+        }
+        .disp {
+            display: flex;
+        }
+        .nav {
+            flex: 0 0 150px;
+            background-color: lightsteelblue;
+        }
+        .main {
+            background-color: whitesmoke;
+        }
+        .ad {
+            flex: 0 0 150px;
+            background-color: lightsteelblue;
+        }
+        .footer {
+            height: 60px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="disp">
+            <div class="nav"></div>
+            <div class="main"></div>
+            <div class="ad"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
