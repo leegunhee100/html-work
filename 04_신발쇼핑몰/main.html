@@ -96,6 +96,29 @@
       * {
         box-sizing: border-box;
       }
+
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 1000px;
+        margin: 50px auto;
+      }
+      .product-container div {
+        width: 25%;
+        text-align: center;
+      }
+
+      /* 반응형 레이아웃은 css의 맨 밑에 둔다. */
+      /* 480px 이하 : 모바일 사이즈 */
+      @media (max-width: 480px) {
+        .main-title {
+          font-size: 20px;
+        }
+        .product-container div {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -157,5 +180,24 @@
         </form>
       </div>
     </div>
+    <!-- 제품설명영역 -->
+     <div class="product-container">
+      <div>
+        <h4>Fast Shipping</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div>
+        <h4>Good Service</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div>
+        <h4>Free Coupons</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div>
+        <h4>New Products</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+     </div>
   </body>
 </html>
